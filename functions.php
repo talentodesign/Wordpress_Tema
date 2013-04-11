@@ -73,5 +73,9 @@ function rm_bread_crumbs() {
  $crumbs .=    '</p>'."\n";
  echo $crumbs;
 }
+//Ativando Shortcodes nos Widgets
+add_filter('widget_text', 'do_shortcode');
+//Ativando Thumbnails
+add_theme_support( 'post-thumbnails' );
 
 ?>
